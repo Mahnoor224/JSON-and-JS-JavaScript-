@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h2>JavaScript</h2>
+        <h1 id="result"></h1>
+        <h3 id="response"></h3>
+        <script>
+            var myObj = { name: "Eman", age: 18, grade: 7 };
+                var myJSON = JSON.stringify(myObj);
+            async function add(a,b) {                          
+                let response = await a + b;
+                display(response);
+            }
+            var newObj = JSON.parse(myJSON);
+            function display(some) {
+                document.getElementById("result").innerHTML = some;
+            }
+            add(234,404);
+            document.getElementById("response").innerHTML = newObj.name;
+        </script>
+    </body>
+</html>
+
+
+
